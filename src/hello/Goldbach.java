@@ -4,6 +4,9 @@ public class Goldbach {
 
     public static int isPrime(int tf) {
         int prime = 0;
+        if (tf < 2) {
+            prime = 0;
+        }
         for (int i = 2; i <= tf; i++) {
             if (tf % i == 0 && tf / i > 1 && tf != i) {
                 prime = 0;
